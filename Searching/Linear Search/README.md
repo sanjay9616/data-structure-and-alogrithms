@@ -29,3 +29,5 @@ print(search.linearSearch())
 | ---------------- | ------------------------------------- | ------- | ------------------------------------ |
 | Time Complexity  | O(1) - key present at the first index | O(N)    | O(N) - key present at the last index |
 | Space Complexity | O(1)                                  | O(1)    | O(1)                                 |
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/README.md"> 🔙 Back</a></h2>
