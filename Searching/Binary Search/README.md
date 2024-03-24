@@ -47,9 +47,9 @@ class Search:
 
     def binarySearch(self, left, right):
         mid = (left + right) // 2
-        if(self.arr[mid] == self.key):
+        if (self.arr[mid] == self.key):
             return mid
-        elif(self.arr[mid] < self.key):
+        elif (self.arr[mid] < self.key):
             return self.binarySearch(mid + 1, right)
         else:
             return self.binarySearch(left, mid - 1)
