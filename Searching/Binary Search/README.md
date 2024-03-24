@@ -61,9 +61,22 @@ print(search.binarySearch(0, len(arr) - 1))
 # Output - 10
 ```
 
-|                  | Best                                | Average   | Worst                                     |
-| ---------------- | ----------------------------------- | --------- | ----------------------------------------- |
-| Time Complexity  | O(1) - key present at the mid index | O(log(N)) | O(log(N)) - key present at the last index |
-| Space Complexity | O(1)                                | O(1)      | O(1)                                      |
+|                  | Best                                | Average   | Worst     |
+| ---------------- | ----------------------------------- | --------- | --------- |
+| Time Complexity  | O(1) - key present at the mid index | O(log(N)) | O(log(N)) |
+| Space Complexity | O(1)                                | O(1)      | O(1)      |
+
+**Note**: O(1), If the recursive call stack is considered then the auxiliary space will be O(logN).
+
+**Advantages:**
+
+1. Binary search is faster than linear search, especially for large arrays. </br>
+2. More efficient than other searching algorithms with a similar time complexity, such as interpolation search or exponential search. </br>
+3. Binary search is well-suited for searching large datasets that are stored in external memory, such as on a hard drive or in the cloud. </br>
+
+**Drawbacks:**
+
+1. The array should be sorted. </br>
+1. Binary search requires that the elements of the array be comparable, meaning that they must be able to be ordered. </br>
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/README.md"> 🔙 Back</a></h2>
