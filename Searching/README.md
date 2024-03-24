@@ -23,8 +23,8 @@ Linear Search, also known as Sequential Search, is one of the simplest and most 
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a></h2>
 
-Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
+Binary Search is defined as a searching algorithm based on divide and conquer technique used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Ternary%20Search/README.md">Ternary Search</a></h2>
 
-Binary Search is defined as a searching algorithm used in a sorted array that divides the search space into three parts instead of two, as in Binary Search.
+Ternary Search is defined as a searching algorithm based on divide and conquer technique like Binary Search used in a sorted array that divides the search space into three parts instead of two.

@@ -1,16 +1,19 @@
 **Ternary Search:**
 
-Binary Search is defined as a searching algorithm used in a sorted array that divides the search space into three parts instead of two, as in Binary Search.
+Ternary Search is defined as a searching algorithm based on **divide and conquer** technique like Binary Search used in a **sorted array** that divides the search space into **three parts** instead of two.
 
 **How Does Binary Search Algorithm Work**:
 
-    • Divide the search space into two halves by finding the middle index “mid”.
-    • Compare the middle element of the search space with the key.
-    • If the key is found at middle element, the process is terminated.
-    • If the key is not found at middle element, choose which half will be used as the next search space.
-        1. If the key is smaller than the middle element, then the left side is used for next search.
-        2. If the key is larger than the middle element, then the right side is used for next search.
-    • This process is continued until the key is found or the total search space is exhausted.
+    • Calculate two midpoints, mid1 and mid2, dividing the current search space into three roughly equal parts:
+    • mid1 = left + (right – left) / 3
+    • mid2 = right – (right – left) / 3
+    • The array is now effectively divided into [left, mid1], (mid1, mid2), and [mid2, right].
+    • If the target is equal to the element at mid1 or mid2, the search is successful, and the index is returned
+    • If the target is less than the element at mid1, update the right pointer to mid1 – 1.
+    • If the target is greater than the element at mid2, update the left pointer to mid2 + 1.
+    • If the target is between the elements at mid1 and mid2, update the left pointer to mid1 + 1 and the right pointer to mid2 – 1.
+    • Repeat the process with the reduced search space until the target is found or the search space becomes empty.
+    • If the search space is empty and the target is not found, return a value indicating that the target is not present in the array.
 
 **Iterative Approach:**
 
@@ -45,19 +48,26 @@ class Search:
         self.arr = arr
         self.key = key
 
-    def binarySearch(self, left, right):
-        mid = (left + right) // 2
-        if (self.arr[mid] == self.key):
-            return mid
-        elif (self.arr[mid] < self.key):
-            return self.binarySearch(mid + 1, right)
-        else:
-            return self.binarySearch(left, mid - 1)
+    def ternarySearch(self, left, right):
+        while right >= left:
+            mid1 = left + (right - left) // 3
+            mid2 = right - (right - left) // 3
+            if (key == self.arr[mid1]):
+                return mid1
+            if (key == self.arr[mid2]):
+                return mid2
+            if (key < self.arr[mid1]):
+                return self.ternarySearch(left, mid1 - 1)
+            elif (key > self.arr[mid2]):
+                return self.ternarySearch(mid2 + 1, right)
+            else:
+                return self.ternarySearch(mid1 + 1, mid2 - 1)
         return -1
 
-arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 9
+
+arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5
 search = Search(arr, key)
-print(search.binarySearch(0, len(arr) - 1))
+print(search.ternarySearch(0, len(arr) - 1))
 # Output - 10
 ```
 
@@ -70,13 +80,14 @@ print(search.binarySearch(0, len(arr) - 1))
 
 **Advantages:**
 
-1. Binary search is faster than linear search, especially for large arrays. </br>
-2. More efficient than other searching algorithms with a similar time complexity, such as interpolation search or exponential search. </br>
-3. Binary search is well-suited for searching large datasets that are stored in external memory, such as on a hard drive or in the cloud. </br>
+1. Ternary search can find maxima/minima for unimodal functions, where binary search is not applicable. </br>
+2. Ternary Search has a time complexity of O(2 * log3n), which is more efficient than linear search and comparable to binary search. </br>
+3. Fits well with optimization problems. </br>
 
 **Drawbacks:**
 
 1. The array should be sorted. </br>
-1. Binary search requires that the elements of the array be comparable, meaning that they must be able to be ordered. </br>
+2. Ternay search requires that the elements of the array be comparable, meaning that they must be able to be ordered. </br>
+3. Ternary Search takes more time to find maxima/minima of monotonic functions as compared to Binary Search. </br>
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/README.md"> 🔙 Back</a></h2>
