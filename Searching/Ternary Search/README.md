@@ -1,6 +1,6 @@
 **Ternary Search:**
 
-Ternary Search is a searching algorithm that divides the search space into three parts instead of two, as in Binary Search.
+Binary Search is defined as a searching algorithm used in a sorted array that divides the search space into three parts instead of two, as in Binary Search.
 
 **How Does Binary Search Algorithm Work**:
 
