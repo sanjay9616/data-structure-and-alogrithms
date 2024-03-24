@@ -16,3 +16,7 @@ Below are some search algorithms and their time complexity and space complexity:
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)      | O(N)      | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Ternary Search</a>               | O(1) | O(N)      | O(N)      | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">The Ubiquitous Binary Search</a> | O(1) | O(N)      | O(N)      | O(1)             |
+
+**Linear Search**: Linear Search, also known as Sequential Search, is one of the simplest and most straightforward searching algorithms. It works by sequentially examining each element in a collection of data(array or list) until a match is found or the entire collection has been traversed.
+
+**Binary Search**: Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
