@@ -1,6 +1,5 @@
 <h2>Searching</h2>
 
-| Algorithm              | Time Complexity          | Space Complexity  |
-|                        | Best | Average | Worst   |                   |
-|----------------------- | ------------------------ | ----------------- |
-| DP                     |   2  |  2      |         | O(N)              |
+| Algorithm              | Best          | Average  |        | Average  |  Space Complexity            |
+|----------------------- | --------------|--------- | -------|--------- |------------------------------|
+| DP                     | O(N^2)        | O(N^2)   | O(N^2) | O(N^2)   | O(N)                         |
