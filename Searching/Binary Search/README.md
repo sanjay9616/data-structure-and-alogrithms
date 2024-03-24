@@ -1,10 +1,18 @@
-Binary Search is defined as a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
+**Binary Search:**
+
+Binary Search is defined as a searching algorithm used in a **sorted array** by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
 
 **How Does Binary Search Algorithm Work**:
 
-    • Every element is considered as a potential match for the key and checked for the same.
-    • If any element is found equal to the key, the search is successful and the index of that element is returned.
-    • If no element is found equal to the key, the search return -1.
+    • Divide the search space into two halves by finding the middle index “mid”.
+    • Compare the middle element of the search space with the key.
+    • If the key is found at middle element, the process is terminated.
+    • If the key is not found at middle element, choose which half will be used as the next search space.
+        1. If the key is smaller than the middle element, then the left side is used for next search.
+        2. If the key is larger than the middle element, then the right side is used for next search.
+    • This process is continued until the key is found or the total search space is exhausted.
+
+**Iterative Approach:**
 
 ```python
 class Search:
@@ -13,19 +21,49 @@ class Search:
         self.key = key
         self.n = len(arr)
 
-    def linearSearch(self):
-        for i in range(self.n):
-            if (self.arr[i] == self.key):
-                return i
+    def binarySearch(self):
+        left, right = 0, self.n - 1
+        while(left <= right):
+            mid = (left + right) // 2
+            if(self.arr[mid] == self.key):
+                return mid
+            elif(self.arr[mid] < self.key):
+                left = mid + 1
+            else:
+                right = mid - 1
         return -1
 
+search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 9)
+print(search.binarySearch())
+# OutPut = 10
+```
+**Recursive Approach:**
 
-search = Search([1, 2, 32], 32)
-print(search.linearSearch())
-# OutPut = 2
+```python
+class Search:
+    def __init__(self, arr, key):
+        self.arr = arr
+        self.key = key
+
+    def binarySearch(self, left, right):
+        mid = (left + right) // 2
+        if(self.arr[mid] == self.key):
+            return mid
+        elif(self.arr[mid] < self.key):
+            return self.binarySearch(mid + 1, right)
+        else:
+            return self.binarySearch(left, mid - 1)
+        return -1
+
+arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 9
+search = Search(arr, key)
+print(search.binarySearch(0, len(arr) - 1))
+# Output - 10
 ```
 
-|                  | Best                                  | Average   | Worst                                     |
-| ---------------- | ------------------------------------- | --------- | ----------------------------------------- |
-| Time Complexity  | O(1) - key present at the first index | O(log(N)) | O(log(N)) - key present at the last index |
-| Space Complexity | O(1)                                  | O(1)      | O(1)                                      |
+|                  | Best                                | Average   | Worst                                     |
+| ---------------- | ----------------------------------- | --------- | ----------------------------------------- |
+| Time Complexity  | O(1) - key present at the mid index | O(log(N)) | O(log(N)) - key present at the last index |
+| Space Complexity | O(1)                                | O(1)      | O(1)                                      |
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/README.md"> 🔙 Back</a></h2>
