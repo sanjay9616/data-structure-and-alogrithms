@@ -6,6 +6,25 @@ Linear Search, also known as Sequential Search, is one of the simplest and most 
     • If any element is found equal to the key, the search is successful and the index of that element is returned.
     • If no element is found equal to the key, the search return -1.
 
+```python
+class Search:
+    def __init__(self, arr, key):
+        self.arr = arr
+        self.key = key
+        self.n = len(arr)
+
+    def linearSearch(self):
+        for i in range(self.n):
+            if (self.arr[i] == self.key):
+                return i
+        return -1
+
+
+search = Search([1, 2, 32], 32)
+print(search.linearSearch())
+# OutPut = 2
+```
+
 |                  | Best                                  | Average | Worst                                |
 | ---------------- | ------------------------------------- | ------- | ------------------------------------ |
 | Time Complexity  | O(1) - key present at the first index | O(N)    | O(N) - key present at the last index |
