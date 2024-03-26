@@ -9,10 +9,10 @@ Below are some search algorithms and their time complexity and space complexity:
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a>                | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a>                | O(1) | O(log<sub>2</sub>(N)) | O(log<sub>2</sub>(N)) | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Ternary Search</a>               | O(1) | O(log<sub>3</sub>(N)) | O(log<sub>3</sub>(N)) | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Jump Search</a>                  | O(1) | O(√N)                 | O(√N)                 | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Exponential Search</a>           | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Fibonacci Search</a>             | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Interpolation Search</a>         | O(1) | O(N)                  | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Jump Search</a>                  | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>           | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)                  | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">The Ubiquitous Binary Search</a> | O(1) | O(N)                  | O(N)                  | O(1)             |
@@ -28,3 +28,7 @@ Binary Search is defined as a searching algorithm based on divide and conquer te
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Ternary%20Search/README.md">Ternary Search</a></h2>
 
 Ternary Search is defined as a searching algorithm based on divide and conquer technique like Binary Search used in a sorted array that divides the search space into three parts instead of two.
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Jump%20Search/README.md">Jump Search</a></h2>
+
+Jump Search is defined as a searching algorithm used in a **sorted array** and the basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements

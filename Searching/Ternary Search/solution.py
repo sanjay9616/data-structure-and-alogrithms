@@ -2,25 +2,26 @@ class Search:
     def __init__(self, arr, key):
         self.arr = arr
         self.key = key
+        self.n = len(arr)
 
-    def ternarySearch(self, left, right):
-        while right >= left:
-            mid1 = left + (right - left) // 3
-            mid2 = right - (right - left) // 3
-            if (key == self.arr[mid1]):
-                return mid1
-            if (key == self.arr[mid2]):
-                return mid2
-            if (key < self.arr[mid1]):
-                right = mid1 - 1
-            elif (key > self.arr[mid2]):
-                left = mid2 + 1
-            else:
-                left = mid1 + 1
-                right = mid2 - 1
+    def jumpSearch(self):
+        import math
+        step = int(math.sqrt(self.n))
+        left = 0
+        right = self.n - 1
+        for i in range(0, self.n, step):
+            if (self.arr[i] < self.key):
+                left = i
+            if (self.arr[i] == self.key):
+                return i
+            elif (self.arr[i] > self.key):
+                right = i
+                break
+        for i in range(left, right + 1, 1):
+            if (self.arr[i] == self.key):
+                return i
         return -1
 
-
-arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5
-search = Search(arr, key)
-print(search.ternarySearch(0, len(arr) - 1))
+search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 0)
+print(search.jumpSearch())
+# Output = 0
