@@ -28,7 +28,7 @@ class Search:
         for i in range(0, self.n, step):
             if (self.arr[i] < self.key):
                 left = i
-            if (self.arr[i] == self.key):
+            elif (self.arr[i] == self.key):
                 return i
             elif (self.arr[i] > self.key):
                 right = i
