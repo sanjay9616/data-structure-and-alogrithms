@@ -19,29 +19,23 @@ class Search:
     def __init__(self, arr, key):
         self.arr = arr
         self.key = key
+        self.n = len(arr)
 
-    def ternarySearch(self, left, right):
-        while right >= left:
-            mid1 = left + (right - left) // 3
-            mid2 = right - (right - left) // 3
-            if (key == self.arr[mid1]):
-                return mid1
-            if (key == self.arr[mid2]):
-                return mid2
-            if (key < self.arr[mid1]):
-                right = mid1 - 1
-            elif (key > self.arr[mid2]):
-                left = mid2 + 1
+    def binarySearch(self):
+        left, right = 0, self.n - 1
+        while(left <= right):
+            mid = (left + right) // 2
+            if(self.arr[mid] == self.key):
+                return mid
+            elif(self.arr[mid] < self.key):
+                left = mid + 1
             else:
-                left = mid1 + 1
-                right = mid2 - 1
+                right = mid - 1
         return -1
 
-
-arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5
-search = Search(arr, key)
-print(search.ternarySearch(0, len(arr) - 1))
-# OutPut = 6 - 2nd element
+search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 9)
+print(search.binarySearch())
+# OutPut = 10
 ```
 **Recursive Approach:**
 
