@@ -75,10 +75,10 @@ print(search.ternarySearch(0, len(arr) - 1))
 # Output = 6 (2nd element)
 ```
 
-|                  | Best                                | Average   | Worst     |
-| ---------------- | ----------------------------------- | --------- | --------- |
-| Time Complexity  | O(1) - key present at the mid index | O(log(N)) | O(log(N)) |
-| Space Complexity | O(1)                                | O(1)      | O(1)      |
+|                  | Best                                | Average               | Worst                 |
+| ---------------- | ----------------------------------- | --------------------- | --------------------- |
+| Time Complexity  | O(1) - key present at the mid index | O(log<sub>3</sub>(N)) | O(log<sub>3</sub>(N)) |
+| Space Complexity | O(1)                                | O(1)                  | O(1)                  |
 
 **Note**: O(1), If the recursive call stack is considered then the auxiliary space will be O(logN).
 
