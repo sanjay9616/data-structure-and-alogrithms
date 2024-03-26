@@ -4,24 +4,18 @@ class Search:
         self.key = key
         self.n = len(arr)
 
-    def jumpSearch(self):
-        import math
-        step = int(math.sqrt(self.n))
-        left = 0
-        right = self.n - 1
-        for i in range(0, self.n, step):
-            if (self.arr[i] < self.key):
-                left = i
-            if (self.arr[i] == self.key):
-                return i
-            elif (self.arr[i] > self.key):
-                right = i
-                break
-        for i in range(left, right + 1, 1):
-            if (self.arr[i] == self.key):
-                return i
+    def binarySearch(self):
+        left, right = 0, self.n - 1
+        while(left <= right and self.arr[left] <= self.key and self.arr[right] >= self.key):
+            mid = left + ((self.key - self.arr[left]) * (right - left)) // (self.arr[right] - self.arr[left])
+            if(self.arr[mid] == self.key):
+                return mid
+            elif(self.arr[mid] < self.key):
+                left = mid + 1
+            else:
+                right = mid - 1
         return -1
 
-search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 0)
-print(search.jumpSearch())
-# Output = 0
+search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5)
+print(search.binarySearch())
+# OutPut = 5
