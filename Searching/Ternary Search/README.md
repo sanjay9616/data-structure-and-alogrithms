@@ -2,7 +2,7 @@
 
 Ternary Search is defined as a searching algorithm based on **divide and conquer** technique like Binary Search used in a **sorted array** that divides the search space into **three parts** instead of two.
 
-**How Does Binary Search Algorithm Work**:
+**How Does Ternary Search Algorithm Work**:
 
     • Calculate two midpoints, mid1 and mid2, dividing the current search space into three roughly equal parts:
     • mid1 = left + (right – left) / 3
@@ -22,31 +22,6 @@ class Search:
     def __init__(self, arr, key):
         self.arr = arr
         self.key = key
-        self.n = len(arr)
-
-    def binarySearch(self):
-        left, right = 0, self.n - 1
-        while(left <= right):
-            mid = (left + right) // 2
-            if(self.arr[mid] == self.key):
-                return mid
-            elif(self.arr[mid] < self.key):
-                left = mid + 1
-            else:
-                right = mid - 1
-        return -1
-
-search = Search([0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 9)
-print(search.binarySearch())
-# OutPut = 10
-```
-**Recursive Approach:**
-
-```python
-class Search:
-    def __init__(self, arr, key):
-        self.arr = arr
-        self.key = key
 
     def ternarySearch(self, left, right):
         while right >= left:
@@ -57,18 +32,47 @@ class Search:
             if (key == self.arr[mid2]):
                 return mid2
             if (key < self.arr[mid1]):
-                return self.ternarySearch(left, mid1 - 1)
+                right = mid1 - 1
             elif (key > self.arr[mid2]):
-                return self.ternarySearch(mid2 + 1, right)
+                left = mid2 + 1
             else:
-                return self.ternarySearch(mid1 + 1, mid2 - 1)
+                left = mid1 + 1
+                right = mid2 - 1
+        return -1
+
+arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5
+search = Search(arr, key)
+print(search.ternarySearch(0, len(arr) - 1))
+# OutPut = 6 (2nd element)
+```
+**Recursive Approach:**
+
+```python
+class Search:
+    def __init__(self, arr, key):
+        self.arr = arr
+        self.key = key
+
+    def ternarySearch(self, left, right):
+        mid1 = left + (right - left) // 3
+        mid2 = right - (right - left) // 3
+        if (key == self.arr[mid1]):
+            return mid1
+        if (key == self.arr[mid2]):
+            return mid2
+        if (key < self.arr[mid1]):
+            return self.ternarySearch(left, mid1 - 1)
+        elif (key > self.arr[mid2]):
+            return self.ternarySearch(mid2 + 1, right)
+        else:
+            return self.ternarySearch(mid1 + 1, mid2 - 1)
         return -1
 
 
 arr, key = [0, 1, 2, 3, 4, 5, 5, 6, 7, 8, 9], 5
 search = Search(arr, key)
 print(search.ternarySearch(0, len(arr) - 1))
-# Output - 10
+# Output = 6 (2nd element)
 ```
 
 |                  | Best                                | Average   | Worst     |
