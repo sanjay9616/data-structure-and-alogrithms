@@ -52,3 +52,5 @@ Fibonacci Search is a comparison-based (Divide and Conquer Algorithm) technique 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Exponential%20Search/README.md">Exponential Search</a></h2>
 
 Exponential search allows for searching through a **sorted**, **unbounded** list for a specified input value (the search "key"). The algorithm consists of two stages. The first stage determines a range in which the search key would reside if it were in the list. In the second stage, a binary search is performed on this range.
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/README.md"> 🔙 Back</a></h2>
