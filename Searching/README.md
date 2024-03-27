@@ -4,18 +4,18 @@ Searching is a technique to find a desired item within a collection of data. Thi
 
 Below are some search algorithms and their time complexity and space complexity:
 
-| Algorithm                                                                                                                                    | Best | Average                              | Worst                 | Space Complexity |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------------------------------------ | --------------------- | ---------------- |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a>                | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a>                | O(1) | O(log<sub>2</sub>(N))                | O(log<sub>2</sub>(N)) | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Ternary Search</a>               | O(1) | O(log<sub>3</sub>(N))                | O(log<sub>3</sub>(N)) | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Jump Search</a>                  | O(1) | O(√N)                                | O(√N)                 | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Interpolation Search</a>         | O(1) | O(log<sub>2</sub>(log<sub>2</sub>N)) | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Fibonacci Search</a>             | O(1) | O(log(N))                            | O(log(N))             | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Exponential Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">The Ubiquitous Binary Search</a> | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| Algorithm                                                                                                                                                                 | Best | Average                              | Worst                 | Space Complexity |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------------------------------------ | --------------------- | ---------------- |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a>                                             | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Sentinel%20Linear%20Search/README.md">Sentinel Linear Search</a>               | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a>                                             | O(1) | O(log<sub>2</sub>(N))                | O(log<sub>2</sub>(N)) | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/The%20Ubiquitous%20Binary%20Search/README.md">The Ubiquitous Binary Search</a> | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Ternary%20Search/README.md">Ternary Search</a>                                 | O(1) | O(log<sub>3</sub>(N))                | O(log<sub>3</sub>(N)) | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Jump%20Search/README.md">Jump Search</a>                                       | O(1) | O(√N)                                | O(√N)                 | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Interpolation%20Search/README.md">Interpolation Search</a>                     | O(1) | O(log<sub>2</sub>(log<sub>2</sub>N)) | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Fibonacci%20Search/README.md">Fibonacci Search</a>                             | O(1) | O(log(N))                            | O(log(N))             | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Exponential%20Search/README.md">Exponential Search</a>                         | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>                                        | O(1) | O(N)                                 | O(N)                  | O(1)             |
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a></h2>
 
@@ -28,6 +28,8 @@ Sentinel Linear Search as the name suggests is a type of Linear Search where the
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a></h2>
 
 Binary Search is defined as a searching algorithm based on divide and conquer technique used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(log N)
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/The%20Ubiquitous%20Binary%20Search/README.md">The Ubiquitous Binary Search</a></h2>
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Ternary%20Search/README.md">Ternary Search</a></h2>
 
