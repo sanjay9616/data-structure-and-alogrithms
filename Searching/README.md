@@ -11,8 +11,8 @@ Below are some search algorithms and their time complexity and space complexity:
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Ternary Search</a>               | O(1) | O(log<sub>3</sub>(N))                | O(log<sub>3</sub>(N)) | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Jump Search</a>                  | O(1) | O(√N)                                | O(√N)                 | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Interpolation Search</a>         | O(1) | O(log<sub>2</sub>(log<sub>2</sub>N)) | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Fibonacci Search</a>             | O(1) | O(log(N))                            | O(log(N))             | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Exponential Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Fibonacci Search</a>             | O(1) | O(N)                                 | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)                                 | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">The Ubiquitous Binary Search</a> | O(1) | O(N)                                 | O(N)                  | O(1)             |
@@ -38,3 +38,7 @@ Jump Search is defined as a searching algorithm used in a **sorted array** and t
 Interpolation Search is defined as is an efficient searching algorithm for **sorted** collections of data, such as arrays or lists. It is an improvement over Binary Search, particularly when the data is uniformly distributed.
 
 Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched. For example, if the value of the key is closer to the last element, interpolation search is likely to start search toward the end side.
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Fibonacci%20Search/README.md">Fibonacci Search</a></h2>
+
+Fibonacci Search is a comparison-based (Divide and Conquer Algorithm) technique that uses Fibonacci numbers to search an element in a **sorted array**.
