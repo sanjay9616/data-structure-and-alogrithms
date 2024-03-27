@@ -7,19 +7,23 @@ Below are some search algorithms and their time complexity and space complexity:
 | Algorithm                                                                                                                                    | Best | Average                              | Worst                 | Space Complexity |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---- | ------------------------------------ | --------------------- | ---------------- |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a>                | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)                                 | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a>                | O(1) | O(log<sub>2</sub>(N))                | O(log<sub>2</sub>(N)) | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Ternary Search</a>               | O(1) | O(log<sub>3</sub>(N))                | O(log<sub>3</sub>(N)) | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Jump Search</a>                  | O(1) | O(√N)                                | O(√N)                 | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Interpolation Search</a>         | O(1) | O(log<sub>2</sub>(log<sub>2</sub>N)) | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Fibonacci Search</a>             | O(1) | O(log(N))                            | O(log(N))             | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Exponential Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
-| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Sentinel Linear Search</a>       | O(1) | O(N)                                 | O(N)                  | O(1)             |
 | <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">The Ubiquitous Binary Search</a> | O(1) | O(N)                                 | O(N)                  | O(1)             |
+| <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Meta Binary Search</a>           | O(1) | O(N)                                 | O(N)                  | O(1)             |
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Linear%20Search">Linear Search</a></h2>
 
 Linear Search, also known as Sequential Search, is one of the simplest and most straightforward searching algorithms. It works by sequentially examining each element in a collection of data(array or list) until a match is found or the entire collection has been traversed.
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Sentinel%20Linear%20Search/README.md">Sentinel Linear Search</a></h2>
+
+Sentinel Linear Search as the name suggests is a type of Linear Search where the number of comparisons is reduced as compared to a traditional linear search. In a traditional linear search, only N comparisons are made, and in a Sentinel Linear Search, the sentinel value is used to avoid any out-of-bounds comparisons, but there is no additional comparison made specifically for the index of the element being searched.
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/tree/master/Searching/Binary%20Search">Binary Search</a></h2>
 
