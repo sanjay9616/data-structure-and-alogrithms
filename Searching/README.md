@@ -42,3 +42,7 @@ Binary Search always goes to the middle element to check. On the other hand, int
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Fibonacci%20Search/README.md">Fibonacci Search</a></h2>
 
 Fibonacci Search is a comparison-based (Divide and Conquer Algorithm) technique that uses Fibonacci numbers to search an element in a **sorted array**.
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Searching/Exponential%20Search/README.md">Exponential Search</a></h2>
+
+Exponential search allows for searching through a **sorted**, **unbounded** list for a specified input value (the search "key"). The algorithm consists of two stages. The first stage determines a range in which the search key would reside if it were in the list. In the second stage, a binary search is performed on this range.

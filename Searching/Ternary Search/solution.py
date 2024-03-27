@@ -1,30 +1,22 @@
-def FibonacciGenerator(n):
-    if n < 1:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return FibonacciGenerator(n - 1) + FibonacciGenerator(n - 2)
-
-def FibonacciSearch(arr, x):
-    m = 0
-    while FibonacciGenerator(m) < len(arr):
-        m = m + 1
-    offset = -1
-    while (FibonacciGenerator(m) > 1):
-        i = min(offset + FibonacciGenerator(m - 2), len(arr) - 1)
-        if (x > arr[i]):
-            m = m - 1
-            offset = i
-        elif (x < arr[i]):
-            m = m - 2
-        else:
-            return i
-    if (FibonacciGenerator(m - 1) and arr[offset + 1] == x):
-        return offset + 1
+def binarySearch(arr, l, r, x):
+    if r >= l:
+        mid = l + (r-l) // 2
+        if arr[mid] == x:
+            return mid
+        if arr[mid] > x:
+            return binarySearch(arr, l, mid - 1, x)
+        return binarySearch(arr, mid + 1, r, x)
     return -1
 
+def exponentialSearch(arr, n, x):
+    if arr[0] == x:
+        return 0
+    i = 1
+    while i < n and arr[i] <= x:
+        i = i * 2
+    return binarySearch(arr, i // 2, min(i, n-1), x)
 
-arr = [10, 22, 30, 44, 56, 58, 60, 70, 100, 110, 130]
-x = 60
-print(FibonacciSearch(arr, x))
+arr = [2, 3, 4, 10, 40]
+n = len(arr)
+x = 10
+print(exponentialSearch(arr, n, x))
