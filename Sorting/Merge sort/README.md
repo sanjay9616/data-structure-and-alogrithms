@@ -40,6 +40,8 @@ print(mergeSort([9, 8, 7, 6, 5, 3]))
 
 **Complexity Analysis of Merge Sort:** = T(n) = 2T(n/2) + θ(n)
 
+![Screenshot from 2024-03-28 22-26-57](https://github.com/sanjay9616/data-structure-and-alogrithms/assets/87460579/faa8e270-aca2-4b2c-81eb-c871cfda818e)
+
 
 |                  | Best        | Average     | Worst       |
 | ---------------- | ----------- | ----------- | ----------- |
