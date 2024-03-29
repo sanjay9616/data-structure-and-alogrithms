@@ -1,28 +1,21 @@
-def mergeSort(arr):
-    if (len(arr) > 1):
-        mid = len(arr)//2
-        L = arr[:mid]
-        R = arr[mid:]
-        mergeSort(L)
-        mergeSort(R)
-        i = j = k = 0
-        while (i < len(L) and j < len(R)):
-            if (L[i] <= R[j]):
-                arr[k] = L[i]
-                i += 1
-            else:
-                arr[k] = R[j]
-                j += 1
-            k += 1
-        while (i < len(L)):
-            arr[k] = L[i]
-            i += 1
-            k += 1
-        while (j < len(R)):
-            arr[k] = R[j]
-            j += 1
-            k += 1
-    return arr
+def partition(arr, left, right):
+    pivot = arr[right]
+    i = left - 1
+    for j in range(left, right):
+        if (arr[j] <= pivot):
+            i = i + 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i + 1], arr[right] = arr[right], arr[i + 1]
+    return i + 1
 
 
-print(mergeSort([9, 8, 7, 6, 5, 3]))
+def quickSort(arr, left, right):
+    if (left < right):
+        pi = partition(arr, left, right)
+        quickSort(arr, left, pi - 1)
+        quickSort(arr, pi + 1, right)
+
+
+arr = [8, 7, 2, 1, 0, 9, 6]
+quickSort(arr, 0, len(arr) - 1)
+print(arr)

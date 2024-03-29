@@ -4,6 +4,8 @@ Merge sort is defined as a sorting algorithm that works by dividing an array int
 
 In simple terms, we can say that the process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.
 
+It follows divides, conquer and combine approach.
+
 **Algorithm**:
 
 Merge sort is a recursive algorithm that continuously splits the array in half until it cannot be further divided i.e., the array has only one element left (an array with one element is always sorted). Then the sorted subarrays are merged into one sorted array.
