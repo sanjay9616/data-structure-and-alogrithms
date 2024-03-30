@@ -32,6 +32,8 @@ The total number of comparisons required in the min heap is according to the hei
 | getMax (For max-heap) or getMin (For min-heap) | O(1)    | O(1)    | O(1)    | O(1)             |
 | removeMin or removeMax                         | O(logN) | O(logN) | O(logN) | O(1)             |
 
+**Implementation of Max Heap:**
+
 ```python
 class maxHeap:
     def __init__(self, maxSize):
