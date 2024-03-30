@@ -12,6 +12,8 @@ The total number of comparisons required in the max heap is according to the hei
 
 The total number of comparisons required in the min heap is according to the height of the tree. The height of the complete binary tree is always logn; therefore, the time complexity would also be O(logn).
 
+<a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/heapq.md">Heap queue (or heapq) in Python</a>
+
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221220165711/MinHeapAndMaxHeap1.png" alt="not found">
 
 **Properties of Heap:**
@@ -24,13 +26,13 @@ The total number of comparisons required in the min heap is according to the hei
 
 **Operations Supported by Heap:**
 
-| Algorithm                                      | Best    | Average | Worst   | Space Complexity |
-| ---------------------------------------------- | ------- | ------- | ------- | ---------------- |
-| Heapify                                        | O(1)    | O(logN) | O(logN) | O(1)             |
-| Insertion                                      | O(1)    | O(logN) | O(logN) | O(1)             |
-| Deletion                                       | O(1)    | O(logN) | O(N^2)  | O(1)             |
-| getMax (For max-heap) or getMin (For min-heap) | O(1)    | O(1)    | O(1)    | O(1)             |
-| removeMin or removeMax                         | O(logN) | O(logN) | O(logN) | O(1)             |
+| Algorithm                                            | Best    | Average | Worst   | Space Complexity |
+| ---------------------------------------------------- | ------- | ------- | ------- | ---------------- |
+| Heapify                                              | O(1)    | O(logN) | O(logN) | O(1)             |
+| Insertion                                            | O(1)    | O(logN) | O(logN) | O(1)             |
+| Deletion                                             | O(1)    | O(logN) | O(N^2)  | O(1)             |
+| getMax (For max-heap) or getMin (For min-heap)       | O(1)    | O(1)    | O(1)    | O(1)             |
+| removeMax (For max-heap) or removeMin (For min-heap) | O(logN) | O(logN) | O(logN) | O(1)             |
 
 **Applications of Heap Data Structure:**
 
