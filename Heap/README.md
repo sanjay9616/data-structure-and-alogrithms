@@ -4,15 +4,15 @@ A Heap is a complete binary tree data structure that satisfies the heap property
 
 **Types of Heap Data Structure:**
 
-**Max heap:** In this heap, the value of the root node must be the greatest among all its child nodes and the same thing must be done for its left and right sub-tree also. <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/maxHeap.md">View Implementation</a>
+**Max heap:** In this heap, the value of the root node must be the greatest among all its child nodes and the same thing must be done for its left and right sub-tree also. <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/maxHeap.md">View Implementation 🔗</a>
 
 The total number of comparisons required in the max heap is according to the height of the tree. The height of the complete binary tree is always logn; therefore, the time complexity would also be O(logn).
 
-**Min heap:** In this heap, the value of the root node must be the smallest among all its child nodes and the same thing must be done for its left and right sub-tree also. <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/minHeap.md">View Implementation</a>
+**Min heap:** In this heap, the value of the root node must be the smallest among all its child nodes and the same thing must be done for its left and right sub-tree also. <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/minHeap.md">View Implementation 🔗</a>
 
 The total number of comparisons required in the min heap is according to the height of the tree. The height of the complete binary tree is always logn; therefore, the time complexity would also be O(logn).
 
-<a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/heapq.md">Heap queue (or heapq) in Python</a>
+<a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/heapq.md">Heap queue (or heapq) in Python 🔗</a>
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221220165711/MinHeapAndMaxHeap1.png" alt="not found">
 
