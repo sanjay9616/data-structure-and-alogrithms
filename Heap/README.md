@@ -14,6 +14,8 @@ The total number of comparisons required in the min heap is according to the hei
 
 <a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Heap/heapq.md">View - Heap queue (or heapq) in Python</a>
 
+<a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Sorting/Heap%20sort/README.md">View - Heap Sort</a>
+
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221220165711/MinHeapAndMaxHeap1.png" alt="not found">
 
 **Properties of Heap:**

@@ -60,7 +60,7 @@ print(mergeSort([9, 8, 7, 6, 5, 3]))
 
 1. Merge sort requires additional memory to store the merged sub-arrays during the sorting process.</br>
 2. Merge sort is not an in-place sorting algorithm, which means it requires additional memory to store the sorted data. This can be a disadvantage in applications where memory usage is a concern.</br>
-3. For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets..</br>
+3. For small datasets, Merge sort has a higher time complexity than some other sorting algorithms, such as insertion sort. This can result in slower performance for very small datasets.</br>
 
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Sorting/README.md"> 🔙 Back</a></h2>
