@@ -26,9 +26,9 @@ class maxHeap:
         leftIndex = self.leftChild(i)
         rightIndex = self.rightChild(i)
         largest = i
-        if (leftIndex < self.heapSize and self.heap[leftIndex] > self.heap[i]):
+        if (leftIndex < self.heapSize and self.heap[leftIndex] > self.heap[largest]):
             largest = leftIndex
-        if (rightIndex < self.heapSize and self.heap[rightIndex] > self.heap[i]):
+        if (rightIndex < self.heapSize and self.heap[rightIndex] > self.heap[largest]):
             largest = rightIndex
         if (largest != i):
             self.heap[i], self.heap[largest] = self.heap[largest], self.heap[i]
@@ -49,8 +49,7 @@ class maxHeap:
     def increaseKey(self, i, newValue):
         self.heap[i] = newValue
         while (i != 0 and self.heap[self.parent(i)] < self.heap[i]):
-            self.heap[self.parent(
-                i)], self.heap[i] = self.heap[i], self.heap[self.parent(i)]
+            self.heap[self.parent(i)], self.heap[i] = self.heap[i], self.heap[self.parent(i)]
             i = self.parent(i)
 
     def insertKey(self, key):
@@ -61,8 +60,7 @@ class maxHeap:
         i = self.heapSize - 1
         self.heap[i] = key
         while (i != 0 and self.parent(i) < self.heap[i]):
-            self.heap[self.parent(
-                i)], self.heap[i] = self.heap[i], self.heap[self.parent(i)]
+            self.heap[self.parent(i)], self.heap[i] = self.heap[i], self.heap[self.parent(i)]
             i = self.parent(i)
 
     def deleteKey(self, i):
