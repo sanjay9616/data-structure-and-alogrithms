@@ -54,7 +54,12 @@ The total number of comparisons required in the min heap is according to the hei
 3. Can be efficiently implemented as an array. </br>
 4. Slower than other data structures like arrays and linked lists for non-priority queue operations. </br>
 
+**Some other types of Heap:**
 
+1. Binomial Heap </br>
+2. Fibonacci Heap </br>
+3. Leftist Tree / Leftist Heap </br>
+4. K-ary Heap </br>
 
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/README.md"> 🔙 Back</a></h2>
