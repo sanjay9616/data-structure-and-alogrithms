@@ -100,5 +100,13 @@ q.put(1)
 print("\nEmpty: ", q.empty())
 print("Full: ", q.full()) # Return True if there are maxsize items in the queue. If the queue was initialized with maxsize=0 (the default), then full() never returns True.
 ```
+**Types of Queue:**
+
+There are different types of queues: </br>
+**1. Input Restricted Queue:** This is a simple queue. In this type of queue, the input can be taken from only one end but deletion can be done from any of the ends. </br>
+**2. Output Restricted Queue:** This is also a simple queue. In this type of queue, the input can be taken from both ends but deletion can be done from only one end. </br>
+**3. Circular Queue:** This is a special type of queue where the last position is connected back to the first position. Here also the operations are performed in FIFO order </br>
+**4. Double-Ended Queue (Dequeue):** In a double-ended queue the insertion and deletion operations, both can be performed from both ends. </br>
+**5. Priority Queue:** A priority queue is a special queue where the elements are accessed based on the priority assigned to them. </br>
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/README.md"> 🔙 Back</a></h2>
