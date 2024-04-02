@@ -10,10 +10,10 @@ Linked List is a linear data structure, in which elements are not stored at a co
 **Why linked list data structure needed?**
 
 Here are a few advantages of a linked list that is listed below, it will help you understand why it is necessary to know.</br>
-**Dynamic Data structure:** The size of memory can be allocated or de-allocated at run time based on the operation insertion or deletion.</br>
-**Ease of Insertion/Deletion:** The insertion and deletion of elements are simpler than arrays since no elements need to be shifted after insertion and deletion, Just the address needed to be updated.</br>
-**Efficient Memory Utilization:** As we know Linked List is a dynamic data structure the size increases or decreases as per the requirement so this avoids the wastage of memory. </br>
-**Implementation:** Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
+**1. Dynamic Data structure:** The size of memory can be allocated or de-allocated at run time based on the operation insertion or deletion.</br>
+**2. Ease of Insertion/Deletion:** The insertion and deletion of elements are simpler than arrays since no elements need to be shifted after insertion and deletion, Just the address needed to be updated.</br>
+**3. Efficient Memory Utilization:** As we know Linked List is a dynamic data structure the size increases or decreases as per the requirement so this avoids the wastage of memory. </br>
+**4. Implementation:** Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
 
 **Types of Linked List:**
 
@@ -36,6 +36,16 @@ In a circular linked list, the last node points back to the head node, creating 
 **<a href="" alt="">5. Header Linked List:</a>**
 A header node is a special node that is found at the beginning of the list. A list that contains this type of node, is called the header-linked list. This type of list is useful when information other than that found in each node is needed.
 
+**Advantages of Linked Lists**
+
+**1. Dynamic Size:** Linked lists can grow or shrink dynamically, as memory allocation is done at runtime. </br>
+**2. Insertion and Deletion:** Adding or removing elements from a linked list is efficient, especially for large lists. </br>
+**3. Flexibility:** Linked lists can be easily reorganized and modified without requiring a contiguous block of memory. </br>
+
+**Disadvantages of Linked Lists**
+
+**1. Random Access:** Unlike arrays, linked lists do not allow direct access to elements by index. Traversal is required to reach a specific node. </br>
+**2. Extra Memory:** Linked lists require additional memory for storing the pointers, compared to arrays. </br>
 
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/README.md"> 🔙 Back</a></h2>
