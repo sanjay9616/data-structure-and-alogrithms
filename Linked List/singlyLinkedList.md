@@ -125,3 +125,5 @@ list.insertAtEnd(2)
 print("Size of linked list: ", list.getSize())
 list.displayList()
 ```
+
+<h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Linked%20List/README.md"> 🔙 Back</a></h2>
