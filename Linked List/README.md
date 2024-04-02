@@ -16,9 +16,13 @@ Here are a few advantages of a linked list that is listed below, it will help yo
 **Implementation:** Various advanced data structures can be implemented using a linked list like a stack, queue, graph, hash maps, etc.
 
 **Types of Linked List:**
+
 **<a href="" alt="">1. Singly Linked List</a>**
+
 **<a href="" alt="">2. Doubly Linked List</a>**
+
 **<a href="" alt="">3. Circular Doubly Linked List</a>**
+
 **<a href="" alt="">4. Header Linked List</a>**
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/README.md"> 🔙 Back</a></h2>
