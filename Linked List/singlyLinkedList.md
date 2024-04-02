@@ -1,3 +1,21 @@
+**Operations Supported by Singly Linked List:**
+
+| Algorithm          | Best | Average | Worst | Space Complexity |
+| ------------------ | ---- | ------- | ----- | ---------------- |
+| Insert At Begining | O(1) | O(1)    | O(1)  | O(1)             |
+| Insert At End      | O(N) | O(N)    | O(N)  | O(1)             |
+| Insert At Index    | O(1) | O(N)    | O(N)  | O(1)             |
+| Update At Begining | O(1) | O(1)    | O(1)  | O(1)             |
+| Update At End      | O(N) | O(N)    | O(N)  | O(1)             |
+| Update At Index    | O(1) | O(N)    | O(N)  | O(1)             |
+| Delete At Begining | O(1) | O(1)    | O(1)  | O(1)             |
+| Delete At End      | O(N) | O(N)    | O(N)  | O(1)             |
+| Delete At Index    | O(1) | O(N)    | O(N)  | O(1)             |
+| Get Size           | O(N) | O(N)    | O(N)  | O(1)             |
+
+**Implementation of Singly Linked List:**
+
+```python
 class Node:
     def __init__(self, data):
         self.data = data
@@ -106,3 +124,4 @@ list.insertAtBegin(1)
 list.insertAtEnd(2)
 print("Size of linked list: ", list.getSize())
 list.displayList()
+```
