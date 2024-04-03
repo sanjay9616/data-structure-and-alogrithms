@@ -21,7 +21,7 @@ Here are a few advantages of a linked list that is listed below, it will help yo
 In a singly linked list, each node contains a reference to the next node in the sequence. Traversing a singly linked list is done in a forward direction.
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712172013/Singlelinkedlist.png" alt="not found">
 
-**<a href="">2. Doubly Linked List:</a>**
+**<a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Linked%20List/doublyLinkedList.md">2. Doubly Linked List:</a>**
 In a doubly linked list, each node contains references to both the next and previous nodes. This allows for traversal in both forward and backward directions, but it requires additional memory for the backward reference.
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220712180755/Doublylinkedlist.png" alt="not found">
 
