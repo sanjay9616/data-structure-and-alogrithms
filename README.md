@@ -8,6 +8,8 @@ Sorting is a process in which items are arranged systematically. It has two comm
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Stack/README.md">Stack</a></h2>
 
+Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). LIFO implies that the element that is inserted last, comes out first and FILO implies that the element that is inserted first, comes out last.
+
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Queue/README.md">Queue</a></h2>
 
 A Queue Data Structure is a fundamental concept in computer science used for storing and managing data in a specific order. It follows the principle of “First in, First out” (FIFO), where the first element added to the queue is the first one to be removed. Queues are commonly used in various algorithms and applications for their simplicity and efficiency in managing data flow.
