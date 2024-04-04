@@ -14,6 +14,17 @@ The topmost node of the tree is called the root, and the nodes below it are call
 
 A binary Tree is defined as a Tree data structure with at most 2 children, usually distinguished as “left”, and “right”.
 
+**Types of Binary Tree:**
+
+- Binary Tree consists of following types based on the  number of children: </br>
+    1. Full Binary Tree </br>
+    2. Degenerate Binary Tree </br>
+
+- On the basis of completion of levels, the binary tree can be divided into following types: </br>
+    1. Complete Binary Tree </br>
+    2. Perfect Binary Tree </br>
+    3. Balanced Binary Tree </br>
+
 <h2>Ternary Tree:</h2>
 
 A Ternary Tree is a tree data structure in which each node has at most three child nodes, usually distinguished as “left”, “mid” and “right”.

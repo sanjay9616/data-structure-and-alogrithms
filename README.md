@@ -22,3 +22,7 @@ A Heap is a complete binary tree data structure that satisfies the heap property
 A linked list is a fundamental data structure in computer science. It consists of nodes where each node contains data and a reference (link) to the next node in the sequence. This allows for dynamic memory allocation and efficient insertion and deletion operations compared to arrays.
 
 <h2><a href="https://github.com/sanjay9616/data-structure-and-alogrithms/blob/master/Tree/README.md">Tree</a></h2>
+
+A tree data structure is a hierarchical structure that is used to represent and organize data in a way that is easy to navigate and search. It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes.
+
+The topmost node of the tree is called the root, and the nodes below it are called the child nodes. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.
