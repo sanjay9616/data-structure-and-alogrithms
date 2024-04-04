@@ -25,7 +25,7 @@ A binary Tree is defined as a Tree data structure with at most 2 children, usual
         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220414154428/complete-200x132.jpg" alt="not found">
     2. **Perfect Binary Tree** - all the leaf nodes are at the same depth, and all non-leaf nodes have two children </br>
         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220630154756/img2.jpg" alt="not found">
-    3. Balanced Binary Tree - which the height of the left subtree and right subtree of any node does not differ by more than 1 </br>
+    3. **Balanced Binary Tree** - which the height of the left subtree and right subtree of any node does not differ by more than 1 </br>
         <img src="https://media.geeksforgeeks.org/wp-content/uploads/tree.jpg" alt="not found">
 
 <h2>Ternary Tree:</h2>
